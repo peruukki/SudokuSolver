@@ -1,0 +1,9 @@
+This is a simple recursive sudoku solver.
+
+You can open sudoku files from File -> Open sudoku. The sample file SampleSudoku.sudoku in the repository root shows the supported format.
+
+Click Next to advance the solver one step. The solver always tries the first possible options until it cannot go further, in which case it reverts its steps as necessary and tries the next options.
+
+Click Solve to see the final solution immediately.
+
+The code lacks any comments because it is a sort of a proof-of-concept that I didn't bother to tidy up.
