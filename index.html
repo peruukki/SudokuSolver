@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=640" />
+
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen"/>
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)"/>
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
+
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
+    <title>Sudokusolver by peruukki</title>
+  </head>
+
+  <body>
+    <a id="forkme_banner" href="https://github.com/peruukki/SudokuSolver">View on GitHub</a>
+    <div class="shell">
+
+      <header>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>Sudokusolver</h1>
+            <h2>A recursive sudoku solver. I read about a person who blogged about creating his own sudoku solver but eventually failed because he couldn't get his head around recursion. So I decided to test how I would manage to do it.</h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+      </header>
+
+      <section id="downloads">
+        <span class="inner">
+          <a href="https://github.com/peruukki/SudokuSolver/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/peruukki/SudokuSolver/tarball/master" class="tgz"><em>download</em> .TGZ</a>
+        </span>
+      </section>
+
+
+      <span class="banner-fix"></span>
+
+
+      <section id="main_content">
+        <p>This is a simple recursive sudoku solver.</p>
+
+<p><img src="http://peruukki.github.com/SudokuSolver/images/screenshot.png" alt="Screenshot"></p>
+
+<p>You can open sudoku files from File -&gt; Open sudoku. The sample file SampleSudoku.sudoku in the repository root shows the supported format.</p>
+
+<p>Click Next to advance the solver one step. The solver always tries the first possible options until it cannot go further, in which case it reverts its steps as necessary and tries the next options.</p>
+
+<p>Click Solve to see the final solution (almost) immediately.</p>
+
+<p>When the solver sets a number in a box, it marks the box with a green border. When the solver enters a 3x3 region where the current number was already set in the beginning, it marks that pre-filled box with a blue border.</p>
+      </section>
+
+      <footer>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <p>this project by <a href="https://github.com/peruukki">peruukki</a> can be found on <a href="https://github.com/peruukki/SudokuSolver">GitHub</a></p>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="http://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
