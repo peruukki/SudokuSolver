@@ -1,8 +1,8 @@
 package main;
 
 import static java.awt.Color.BLACK;
+import static java.awt.Color.BLUE;
 import static java.awt.Color.GREEN;
-import static java.awt.Color.RED;
 import static javax.swing.SwingConstants.CENTER;
 import static main.Value.EMPTY;
 
@@ -51,6 +51,7 @@ public final class SmallGrid
     {
         final JLabel label = getLabel( pX, pY );
         final Color borderColor;
+        int thickness;
         
         if (    mGrid[ pX ][ pY ] == null
              || !mGrid[ pX ][ pY ].initial )
@@ -62,14 +63,15 @@ public final class SmallGrid
         }
         else if ( !pValue.isEmpty() )
         {
-            borderColor = RED;
+            borderColor = BLUE;
         }
         else
         {
             borderColor = BLACK;
         }
         
-        label.setBorder( BorderFactory.createLineBorder( borderColor, 1 ) );
+        thickness = ( borderColor == BLACK ) ? 1 : 2;
+        label.setBorder( BorderFactory.createLineBorder( borderColor, thickness ) );
     }
     
     public final void removeValue( Position pPosition )
