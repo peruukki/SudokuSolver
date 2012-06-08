@@ -4,6 +4,6 @@ You can open sudoku files from File -> Open sudoku. The sample file SampleSudoku
 
 Click Next to advance the solver one step. The solver always tries the first possible options until it cannot go further, in which case it reverts its steps as necessary and tries the next options.
 
-Click Solve to see the final solution immediately.
+Click Solve to see the final solution (almost) immediately.
 
-The code lacks any comments because it is a sort of a proof-of-concept that I didn't bother to tidy up.
+When the solver sets a number in a box, it marks the box with a green border. When the solver enters a 3x3 region where the current number was already set in the beginning, it marks that pre-filled box with a blue border.
