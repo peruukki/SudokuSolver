@@ -1,3 +1,3 @@
 This is a simple recursive sudoku solver.
 
-See the [GitHub page](http://peruukki.github.com/SudokuSolver) for more details.
+See the [GitHub page](https://peruukki.github.io/SudokuSolver) for more details.
